@@ -94,8 +94,8 @@ github.com/m-lab/ndt7-client-go v0.9.1 h1:gzyyZChgrOt/WTa5MDib/8VltFXlHj45gG3gkj
 github.com/m-lab/ndt7-client-go v0.9.1/go.mod h1:8MjMGU/6czaqUebngedB/to8n3kh+Z3HzoJ5n1CMPM4=
 github.com/m-lab/tcp-info v1.9.0 h1:kBpnOFzO7/InGekbtAp9HXsJCw7qHZ1bxhUnC7/n4fs=
 github.com/m-lab/tcp-info v1.9.0/go.mod h1:tNw76DkILOd0aFVg2kG3b+W+6aVdpNXg9HcYX45x/qE=
-github.com/m-lab/uuid v1.0.1 h1:+Ku1MQUL9gkSk+eQjLej8qKKtBvAnvZb3TB7QtSP+bw=
-github.com/m-lab/uuid v1.0.1/go.mod h1:Hy/uTQGfYawCYRlxHXh4pNGoZWvvHRg7D4XXvxLbak8=
+github.com/m-lab/uuid v1.0.2 h1:rlkqHQ0fXnj4VtqWElJkc3KgCvOYf3SSZgRRxbycHN8=
+github.com/m-lab/uuid v1.0.2/go.mod h1:SAjW6jto9p0Ms5ZCaTCVe2GTu1pvctlr6W/TEMQ1/vg=
 github.com/m-lab/uuid-annotator v0.4.5 h1:YSgAwaYqgJ85Al+40DEc3NGBaL1t4TiZatdzXgFNTTI=
 github.com/m-lab/uuid-annotator v0.4.5/go.mod h1:6QT/2zZ5xTFmpkYMEkPSwdZIxlQQMvAttwumtHs6//4=
 github.com/mattn/go-colorable v0.1.1/go.mod h1:FuOcm+DKB9mbwrcAfNl7/TZVBZ6rcnceauSikq3lYCQ=
