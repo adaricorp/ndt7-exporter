@@ -8,7 +8,7 @@ require (
 	github.com/m-lab/locate v0.17.6
 	github.com/m-lab/ndt-server v0.23.1
 	github.com/m-lab/ndt7-client-go v0.9.1
-	github.com/prometheus/client_golang v1.21.1
+	github.com/prometheus/client_golang v1.22.0
 	github.com/prometheus/common v0.63.0
 	golang.org/x/sys v0.32.0
 )
@@ -23,7 +23,6 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gorilla/handlers v1.5.2 // indirect
 	github.com/justinas/alice v1.2.0 // indirect
-	github.com/klauspost/compress v1.18.0 // indirect
 	github.com/m-lab/access v0.0.12 // indirect
 	github.com/m-lab/tcp-info v1.9.0 // indirect
 	github.com/m-lab/uuid v1.0.2 // indirect
