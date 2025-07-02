@@ -5,7 +5,7 @@ go 1.24
 require (
 	github.com/gorilla/websocket v1.5.3
 	github.com/m-lab/go v0.1.76
-	github.com/m-lab/locate v0.17.7
+	github.com/m-lab/locate v0.17.8
 	github.com/m-lab/ndt-server v0.23.1
 	github.com/m-lab/ndt7-client-go v0.9.1
 	github.com/prometheus/client_golang v1.22.0
