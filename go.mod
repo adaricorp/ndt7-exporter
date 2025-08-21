@@ -6,7 +6,7 @@ require (
 	github.com/gorilla/websocket v1.5.3
 	github.com/m-lab/go v0.1.76
 	github.com/m-lab/locate v0.17.8
-	github.com/m-lab/ndt-server v0.23.1
+	github.com/m-lab/ndt-server v0.24.0
 	github.com/m-lab/ndt7-client-go v0.9.1
 	github.com/prometheus/client_golang v1.23.0
 	github.com/prometheus/common v0.65.0
@@ -32,6 +32,7 @@ require (
 	github.com/prometheus/procfs v0.17.0 // indirect
 	golang.org/x/crypto v0.41.0 // indirect
 	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1 // indirect
+	golang.org/x/sync v0.16.0 // indirect
 	google.golang.org/protobuf v1.36.7 // indirect
 	gopkg.in/square/go-jose.v2 v2.6.0 // indirect
 )
