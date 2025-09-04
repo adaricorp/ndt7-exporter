@@ -9,7 +9,7 @@ require (
 	github.com/m-lab/ndt-server v0.24.0
 	github.com/m-lab/ndt7-client-go v0.9.1
 	github.com/prometheus/client_golang v1.23.0
-	github.com/prometheus/common v0.65.0
+	github.com/prometheus/common v0.66.0
 	golang.org/x/sys v0.35.0
 )
 
@@ -22,6 +22,7 @@ require (
 	github.com/felixge/httpsnoop v1.0.4 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gorilla/handlers v1.5.2 // indirect
+	github.com/grafana/regexp v0.0.0-20240518133315-a468a5bfb3bc // indirect
 	github.com/justinas/alice v1.2.0 // indirect
 	github.com/m-lab/access v0.0.12 // indirect
 	github.com/m-lab/tcp-info v1.9.0 // indirect
@@ -35,4 +36,5 @@ require (
 	golang.org/x/sync v0.16.0 // indirect
 	google.golang.org/protobuf v1.36.8 // indirect
 	gopkg.in/square/go-jose.v2 v2.6.0 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
