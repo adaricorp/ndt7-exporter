@@ -1,6 +1,6 @@
 module github.com/adaricorp/ndt7-exporter
 
-go 1.24
+go 1.24.0
 
 require (
 	github.com/gorilla/websocket v1.5.3
@@ -10,7 +10,7 @@ require (
 	github.com/m-lab/ndt7-client-go v0.9.1
 	github.com/prometheus/client_golang v1.23.0
 	github.com/prometheus/common v0.66.0
-	golang.org/x/sys v0.35.0
+	golang.org/x/sys v0.36.0
 )
 
 require (
@@ -31,7 +31,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/prometheus/client_model v0.6.2 // indirect
 	github.com/prometheus/procfs v0.17.0 // indirect
-	golang.org/x/crypto v0.41.0 // indirect
+	golang.org/x/crypto v0.42.0 // indirect
 	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1 // indirect
 	golang.org/x/sync v0.16.0 // indirect
 	google.golang.org/protobuf v1.36.8 // indirect
