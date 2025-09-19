@@ -6,7 +6,7 @@ require (
 	github.com/gorilla/websocket v1.5.3
 	github.com/m-lab/go v0.1.76
 	github.com/m-lab/locate v0.18.0
-	github.com/m-lab/ndt-server v0.24.0
+	github.com/m-lab/ndt-server v0.24.1
 	github.com/m-lab/ndt7-client-go v0.9.1
 	github.com/prometheus/client_golang v1.23.2
 	github.com/prometheus/common v0.66.1
