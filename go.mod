@@ -1,6 +1,6 @@
 module github.com/adaricorp/ndt7-exporter
 
-go 1.24.7
+go 1.24.8
 
 require (
 	github.com/gorilla/websocket v1.5.3
