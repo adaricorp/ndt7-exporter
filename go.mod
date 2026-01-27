@@ -7,7 +7,7 @@ require (
 	github.com/m-lab/go v0.1.76
 	github.com/m-lab/locate v0.19.1
 	github.com/m-lab/ndt-server v0.25.0
-	github.com/m-lab/ndt7-client-go v0.10.0
+	github.com/m-lab/ndt7-client-go v0.10.1
 	github.com/prometheus/client_golang v1.23.2
 	github.com/prometheus/common v0.67.5
 	golang.org/x/sys v0.40.0
