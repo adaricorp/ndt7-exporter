@@ -23,7 +23,7 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gorilla/handlers v1.5.2 // indirect
 	github.com/justinas/alice v1.2.0 // indirect
-	github.com/m-lab/access v0.0.13 // indirect
+	github.com/m-lab/access v0.1.0 // indirect
 	github.com/m-lab/tcp-info v1.9.0 // indirect
 	github.com/m-lab/uuid v1.0.2 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
