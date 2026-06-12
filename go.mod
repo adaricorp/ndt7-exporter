@@ -4,8 +4,8 @@ go 1.26.4
 
 require (
 	github.com/gorilla/websocket v1.5.4-0.20250319132907-e064f32e3674
-	github.com/m-lab/go v0.1.76
-	github.com/m-lab/locate v0.20.0
+	github.com/m-lab/go v0.1.77
+	github.com/m-lab/locate v0.20.1
 	github.com/m-lab/ndt-server v0.25.2
 	github.com/m-lab/ndt7-client-go v0.10.1
 	github.com/prometheus/client_golang v1.23.2
@@ -33,5 +33,5 @@ require (
 	golang.org/x/exp v0.0.0-20260112195511-716be5621a96 // indirect
 	golang.org/x/net v0.56.0 // indirect
 	golang.org/x/sync v0.21.0 // indirect
-	google.golang.org/protobuf v1.36.11 // indirect
+	google.golang.org/protobuf v1.36.12-0.20260120151049-f2248ac996af // indirect
 )
