@@ -10,7 +10,7 @@ require (
 	github.com/m-lab/ndt7-client-go v0.10.1
 	github.com/prometheus/client_golang v1.24.1
 	github.com/prometheus/common v0.71.0
-	golang.org/x/sys v0.47.0
+	golang.org/x/sys v0.48.0
 )
 
 require (
