@@ -6,9 +6,9 @@ import (
 	"net"
 	"time"
 
+	"github.com/adaricorp/ndt7-exporter/internal/emitter"
 	"github.com/m-lab/go/memoryless"
 	"github.com/m-lab/ndt7-client-go"
-	"github.com/adaricorp/ndt7-exporter/internal/emitter"
 	"github.com/m-lab/ndt7-client-go/spec"
 )
 
@@ -135,8 +135,12 @@ func makeSummary(FQDN string, results map[spec.TestKind]*ndt7.LatestMeasurements
 
 	var server, client string
 
+	// The client only records a result for a direction it was asked to
+	// start, so a direction that was not run has no entry and its summary
+	// stays nil. Emitters must treat a nil Download or Upload as "not run".
+	//
 	// If there is a download result, populate the summary.
-	if dl, ok := results[spec.TestDownload]; ok {
+	if dl := results[spec.TestDownload]; dl != nil {
 		s.Download = &emitter.SubtestSummary{}
 		if dl.ConnectionInfo != nil {
 			connInfo := dl.ConnectionInfo
@@ -173,7 +177,7 @@ func makeSummary(FQDN string, results map[spec.TestKind]*ndt7.LatestMeasurements
 		}
 	}
 
-	if ul, ok := results[spec.TestUpload]; ok {
+	if ul := results[spec.TestUpload]; ul != nil {
 		s.Upload = &emitter.SubtestSummary{}
 		if ul.ConnectionInfo != nil {
 			connInfo := ul.ConnectionInfo

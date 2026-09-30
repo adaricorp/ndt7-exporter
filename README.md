@@ -29,3 +29,7 @@ ndt7_exporter \
 ### Prometheus
 
 All metric names for prometheus start with `ndt7_`.
+
+A direction that is not run (`-download=false`, `-upload=false`, or the
+direction that `-service-url` does not name) exports no throughput, latency or
+`ndt7_result_timestamp_seconds` series at all, rather than a zero.

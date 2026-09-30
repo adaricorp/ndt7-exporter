@@ -3,8 +3,8 @@ package emitter
 import (
 	"time"
 
-	"github.com/prometheus/client_golang/prometheus"
 	"github.com/m-lab/ndt7-client-go/spec"
+	"github.com/prometheus/client_golang/prometheus"
 )
 
 // Prometheus tees summary metrics as prometheus metrics.
@@ -74,17 +74,30 @@ func (p Prometheus) OnComplete(test spec.TestKind) error {
 }
 
 // OnSummary handles the summary event, emitted after the test is over.
+//
+// A direction that was not run (disabled with -download=false or
+// -upload=false, or left out because -service-url names the other one) has
+// a nil entry in the summary. Its gauges are reset and left empty, so that
+// direction is absent from the scrape: it neither reports a zero it never
+// measured nor keeps a value from an earlier run. The direction that did
+// run is exported as usual.
 func (p *Prometheus) OnSummary(s *Summary) error {
-	// Note this assumes download and upload throughput units are Mbit/s
-	// and latency units are msecs.
-	p.dlTp.Reset()
-	p.dlTp.WithLabelValues(s.ClientIP, s.ServerIP).Set(s.Download.Throughput.Value * 1000.0 * 1000.0)
-	p.dlLat.Reset()
-	p.dlLat.WithLabelValues(s.ClientIP, s.ServerIP).Set(s.Download.Latency.Value / 1000.0)
-	p.ulTp.Reset()
-	p.ulTp.WithLabelValues(s.ClientIP, s.ServerIP).Set(s.Upload.Throughput.Value * 1000.0 * 1000.0)
-	p.ulLat.Reset()
-	p.ulLat.WithLabelValues(s.ClientIP, s.ServerIP).Set(s.Upload.Latency.Value / 1000.0)
+	exportSubtest(p.dlTp, p.dlLat, s.ClientIP, s.ServerIP, s.Download)
+	exportSubtest(p.ulTp, p.ulLat, s.ClientIP, s.ServerIP, s.Upload)
 
 	return p.emitter.OnSummary(s)
+}
+
+// exportSubtest replaces the throughput and latency series of one direction
+// with the values in st, or clears them when st is nil (direction not run).
+func exportSubtest(tp, lat *prometheus.GaugeVec, clientIP, serverIP string, st *SubtestSummary) {
+	tp.Reset()
+	lat.Reset()
+	if st == nil {
+		return
+	}
+	// Note this assumes throughput units are Mbit/s and latency units are
+	// msecs.
+	tp.WithLabelValues(clientIP, serverIP).Set(st.Throughput.Value * 1000.0 * 1000.0)
+	lat.WithLabelValues(clientIP, serverIP).Set(st.Latency.Value / 1000.0)
 }
