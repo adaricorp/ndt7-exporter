@@ -30,6 +30,10 @@ ndt7_exporter \
 
 All metric names for prometheus start with `ndt7_`.
 
-A direction that is not run (`-download=false`, `-upload=false`, or the
-direction that `-service-url` does not name) exports no throughput, latency or
+A direction that is not run exports no throughput, latency or
 `ndt7_result_timestamp_seconds` series at all, rather than a zero.
+`-download=false` and `-upload=false` each leave one direction out. A
+`-service-url` for the download or upload path (`/ndt/v7/download` or
+`/ndt/v7/upload`) runs that direction alone, whatever those two flags say. A
+`-service-url` whose path names neither direction is ignored with a warning,
+and the two flags apply as given.
