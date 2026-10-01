@@ -32,10 +32,12 @@ type Summary struct {
 	// ClientIP is the (v4 or v6) IP address of the client.
 	ClientIP string
 
-	// Download is a summary of the download subtest.
+	// Download is a summary of the download subtest. It is nil when the
+	// download was not run.
 	Download *SubtestSummary
 
-	// Upload is a summary of the upload subtest.
+	// Upload is a summary of the upload subtest. It is nil when the upload
+	// was not run.
 	Upload *SubtestSummary
 }
 
