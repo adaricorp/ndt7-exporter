@@ -111,8 +111,8 @@ github.com/m-lab/ndt-server v0.26.1 h1:dufOocaTWne69GFrjQsSFhy45M+HcAf6EWaf/uDW/
 github.com/m-lab/ndt-server v0.26.1/go.mod h1:rLv4oajdD4xrFJJ6daGbMq2P0EKLx+yxqceofStmaK8=
 github.com/m-lab/ndt7-client-go v0.10.1 h1:+BCtqsmONk8Sw1dvhOrCAUa5oBOrNobA1AB8FbPAejA=
 github.com/m-lab/ndt7-client-go v0.10.1/go.mod h1:UJ8E4LqWZmwwwrxMzsELZ7ojU6VK7gCluPMp7cUrfkA=
-github.com/m-lab/tcp-info v1.9.0 h1:kBpnOFzO7/InGekbtAp9HXsJCw7qHZ1bxhUnC7/n4fs=
-github.com/m-lab/tcp-info v1.9.0/go.mod h1:tNw76DkILOd0aFVg2kG3b+W+6aVdpNXg9HcYX45x/qE=
+github.com/m-lab/tcp-info v1.10.0 h1:NLjlydlWyCZF+o9RC6oRoDqDr0ANNt13FVlogVwnzco=
+github.com/m-lab/tcp-info v1.10.0/go.mod h1:tNw76DkILOd0aFVg2kG3b+W+6aVdpNXg9HcYX45x/qE=
 github.com/m-lab/uuid v1.0.2 h1:rlkqHQ0fXnj4VtqWElJkc3KgCvOYf3SSZgRRxbycHN8=
 github.com/m-lab/uuid v1.0.2/go.mod h1:SAjW6jto9p0Ms5ZCaTCVe2GTu1pvctlr6W/TEMQ1/vg=
 github.com/m-lab/uuid-annotator v0.5.10 h1:ZojVfeiFDdhtN/GqqxxRtBPVxSY4Focf6YRr7Om9XgM=
