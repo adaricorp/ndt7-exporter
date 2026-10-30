@@ -9,7 +9,7 @@ require (
 	github.com/m-lab/ndt-server v0.26.1
 	github.com/m-lab/ndt7-client-go v0.10.1
 	github.com/prometheus/client_golang v1.25.0
-	github.com/prometheus/common v0.72.1
+	github.com/prometheus/common v0.73.0
 	golang.org/x/sys v0.49.0
 )
 
@@ -22,11 +22,13 @@ require (
 	github.com/go-jose/go-jose/v4 v4.1.6 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gorilla/handlers v1.5.2 // indirect
+	github.com/hashicorp/go-uuid v1.0.3 // indirect
 	github.com/justinas/alice v1.2.0 // indirect
 	github.com/m-lab/access v0.1.0 // indirect
 	github.com/m-lab/tcp-info v1.10.0 // indirect
 	github.com/m-lab/uuid v1.0.2 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
+	github.com/pandatix/go-abnf v0.5.1 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/prometheus/client_model v0.6.3 // indirect
 	github.com/prometheus/procfs v0.23.0 // indirect
